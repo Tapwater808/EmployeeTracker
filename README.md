@@ -9,4 +9,4 @@ Employee Tracker made using mysql.
  
  https://mysqlemployee-tracker.herokuapp.com/
 
-![]()
+![](https://github.com/Tapwater808/EmployeeTracker/blob/main/Useage.gif)
