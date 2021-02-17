@@ -17,7 +17,7 @@ var connection = mysql.createConnection({
     user: "root",
   
     // Your password
-    password: "Password",
+    password: "Passwordhere",
     database: "employees_db"
   });
 
@@ -94,7 +94,7 @@ getManagers = () => {
 };
 
 getEmployees = () => {
-  connection.query("SELECT id, CONCAT_WS(' ', first_name, last_name) AS Employee_Name FROM employee", (err, res) => {
+  connection.query("SELECT id, first_name, last_name, CONCAT_WS(' ', first_name, last_name) AS Employee_Name FROM employee", (err, res) => {
     if (err) throw err;
     employees = res;
     // console.table(employees);
